@@ -3,6 +3,25 @@
 %clc  % clears command window
 %clear all; % warning, all results and workspace cleared
 
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\matlab\hardware\supportpackages\sharedarduino\target')
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\matlab\hardware\supportpackages\sharedarduino\target\server')
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\arduinobase\src')
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\arduinobase\include')
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\svd\src')
+addpath('C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\svd\include')
+
+% simulink custom paths
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\matlab\hardware\supportpackages\sharedarduino\target\server
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\matlab\hardware\supportpackages\sharedarduino\target
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\ioserver\ioserver\src
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\ioserver\ioserver\inc
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\arduinobase\src
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\supportpackages\arduinobase\include
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\svd\src
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\svd\include
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\ioserver\template\peripherals\inc
+% C:\ProgramData\MATLAB\SupportPackages\R2018b\toolbox\target\shared\ioserver\template\peripherals\src
+
 opt_fixed_point = 0;
 opt_single = 1;
 
