@@ -288,6 +288,7 @@ void loop() {
 
             if (il <= 0.0) {
               plant_mode_new = MODE_DCM;
+              il_new = 0.0; // cannot physically become negative
             }
 
             break;
