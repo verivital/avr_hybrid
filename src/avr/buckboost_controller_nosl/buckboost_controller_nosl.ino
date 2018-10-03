@@ -136,7 +136,7 @@ void loop() {
               }
             }
             memcpy(payload,buf,sizeof(buf));
-            vc = (long) ((payload[0] << (8*3)) + (payload[1] << (8*2)) + (payload[2] << (8*1)) + (payload[3] << (8*0))) / 100;
+            vc = (float) ((payload[0] << (8*3)) + (payload[1] << (8*2)) + (payload[2] << (8*1)) + (payload[3] << (8*0))) / 100;
             Serial.print("vc: ");
             Serial.println(vc,8);
             RECEIVED_VC = true;

@@ -215,6 +215,15 @@ void loop() {
           payload[1] = (long) (vc * 100) >> (8*2) & 0xFF;
           payload[2] = (long) (vc * 100) >> (8*1) & 0xFF;
           payload[3] = (long) (vc * 100) >> (8*0) & 0xFF;
+
+          Serial.print("VC IN CAN BUFFER BEFORE SEND: ");
+          if (SERIAL_DISPLAY) {          
+            for (int i = 0; i<len; i++) {    // print the data
+                Serial.print(buf[i], HEX);
+                Serial.print("\t");
+            }
+          }
+          
           CAN.sendMsgBuf(0x132, 0, 8, payload);
           
           TRANSMITTED_VC = true;
